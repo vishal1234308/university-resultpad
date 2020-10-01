@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<script>
+          
+function dis(val)
+{
+document.getElementById("edu").value+=val
+}
+
+
+function solve()
+{
+let x=document.getElementById("edu").value
+let y=eval(x)
+
+document.getElementById("edu").value = y
+}
+
+
+function clear()
+{
+document.getElementById("edu").value = ""
+}
+</script>
+<style>
+button{
+
+			background-color:blue;
+			color:white;
+			font-size:10px;
+			border:1px solid yellow;
+
+}
+input[type="text"]{
+			color:black;
+}
+</style>
+
+<body>
+<table>
+		<tr>
+			<th colspan="4"> Aruns calculator </th>
+		</tr>
+		<tr>
+		<td> <input type="button" value="C" onclick="clear()"/></td>
+		<td colspan="3"> <input type="text" id="edu"/></td>
+		</tr>
+		<tr>
+			<td> <input type="button" value="+" onclick="dis('+')" /> </td>
+			<td> <input type="button" value="1" onclick="dis('1')" /> </td>
+			<td> <input type="button" value="2" onclick="dis('2')" /> </td>
+			<td> <input type="button" value="3" onclick="dis('3')" /> </td>
+		</tr>
+		<tr>
+			<td> <input type="button" value="-" onclick="dis('-')" /> </td>
+			<td> <input type="button" value="4" onclick="dis('4')" /> </td>
+			<td> <input type="button" value="5" onclick="dis('5')" /> </td>
+			<td> <input type="button" value="6" onclick="dis('6')" /> </td>
+
+</tr>
+<tr>
+		<td> <input type="button" value="X" onclick="dis('*')" /> </td>
+		<td> <input type="button" value="7" onclick="dis('7')" /> </td>
+		<td> <input type="button" value="8" onclick="dis('8')" /> </td>
+		<td> <input type="button" value="9" onclick="dis('9')" /> </td>
+
+</tr>
+<tr>
+		<td> <input type="button" value="/" onclick="dis('/')" /> </td>
+		<td> <input type="button" value="0" onclick="dis('0')" /> </td>
+		<td> <input type="button" value="=" onclick="solve()" /> </td>
+		<td> <input type="button" value="." onclick="dis('.')" /> </td>
+
+
+
+</tr>
+</table>
+
+
+</body>
+</html>
+
